@@ -1,6 +1,8 @@
 import React, { Children } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRightIcon, DownloadIcon, UserIcon } from 'lucide-react';
+import profile from "../assets/profile.jpg";
+
 export function HeroSection() {
   const containerVariants = {
     hidden: {
@@ -116,7 +118,7 @@ export function HeroSection() {
             {/* Profile Image Container */}
             <div className="relative w-72 h-72 rounded-full overflow-hidden ring-4 ring-primary/20 from-sky-400 to-blue-500 flex items-center justify-center shadow-xl">
               {/* Placeholder for actual image - using initials for now */}
-              <img src='src/assets/images/ankita_singh.jpg'className='h-72 w-72'/>
+              <img src={profile} className='h-72 w-72'/>
               {/* <span className="text-7xl font-bold text-white tracking-tighter"> */}
                 {/* JA */}
               {/* </span> */}
