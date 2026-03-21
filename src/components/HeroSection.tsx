@@ -2,6 +2,7 @@ import React, { Children } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRightIcon, DownloadIcon, UserIcon } from 'lucide-react';
 import profile from "../assets/profile.jpg";
+import resume from "../assets/Ankita_Resume.pdf";
 
 export function HeroSection() {
   const containerVariants = {
@@ -85,7 +86,8 @@ export function HeroSection() {
                 <ArrowRightIcon className="w-4 h-4" />
               </a>
               <a
-                href="#"
+                href={resume}
+                target='_blank'
                 className="flex items-center gap-2 bg-white border border-gray-300 hover:border-gray-400 text-gray-700 font-medium px-6 py-3 rounded transition-colors shadow-sm">
                 <DownloadIcon className="w-4 h-4" />
                 Download Resume
